@@ -27,18 +27,18 @@ input{
   padding-top: 20px;
   box-shadow: 20px 15px 30px darkgray;
 }
-        .sidenav a {
-          font-family: Arial, Helvetica, sans-serif;
-          margin-bottom: 20px;
-          position: relative;
-          top:15%;
-          padding: 3px 30px;
-          text-decoration: none;
-          font-size: 25px;
-          color: white;
-          display: block;
-          line-height:37px;
-        }
+.sidenav a {
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: white solid 1px;
+  margin-bottom: 20px;
+  position: relative;
+  top:15%;
+  padding: 15px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+}
         
         .sidenav a:hover {
           color: #627AAD;
