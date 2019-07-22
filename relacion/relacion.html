@@ -1,0 +1,59 @@
+<html>
+    <head>
+         
+    <div class="sidenav">
+        <a href="../index.html">Registro de documentos</a>
+        <a href="../altacompradores/alta-compradores.html">Alta de compradores</a>
+        <a href="relacion.html">Relacion Proveedor/Banco</a>
+        <a href="#">Contacto</a>
+      </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="register.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div style=" z-index:10; background-color: #002A54; position: relative; bottom:3.1%; right: 100%; width: 4000px; height: 70px;">
+  <img src="efactornetworklogo2.jpg" alt=" efactornetwork" class="elogo2" style=" height:70px; position: relative; left: 6.8%">
+</div>
+
+
+
+    </head>
+    <body style="background-color: #f9f9f9;">
+      
+
+        <div class="main-content" style="background-color: white;">
+            <h1 style="position:relative; left:19%; top: 5%; font-size: 32px; font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;">Relación Proveedor/Banco</h1>
+            <div class="w3-container">
+
+              <p  class="datos"> Nombre:</p> <p  style="display:inline;" id="name" class="nombre" ></p><br>
+              <p class="datos"> RFC:</p> <p  style="display:inline" id="rfc" class="claveunica"></p><br><br>
+      <form>
+    <input placeholder="Tasa Base" id="tasabase"><br>
+    <input placeholder="Spread Points" id="s-points"><br>
+      <select name="tipo-banco0" class="tipo" id="tipo-banco0">
+            <option value="seleccionbanco">Seleccionar Banco</option>
+            <option value="Sabadell">Sabadell</option>
+            <option value="Hitachi">Hitachi</option>
+       </select>
+       <div id="add-bank-form">
+
+       </div>
+     </form>
+     <p id="error"></p>
+          <button onclick="agregar()" style="position:relative; top:150px; left: 230px;">Registrar</button>
+      
+        </div>
+       
+
+     <button id="addbank" onclick="addbank()">Agregar Banco</button>
+
+
+         
+
+<script src="./js/inputs.js"></script> 
+
+      </body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="stylealtacompradores.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+      <div class="logoefn" style="background-color:#002A54; position:relative; width: 4000px; left: -1070px; bottom: 29px; z-index: 10;">
+<img src="efactornetworklogo2.jpg" alt="efactornetwork" style=" height: 70px; position:relative; left:20%;">
+      </div>      
+<body class="main-body" style="background-color: #F2F2F2;">
+            <div class="sidenav">
+                        <link rel="stylesheet" href="style.css">
+                        <a href="../index.html">Registro de documentos</a>
+                        <a href="alta-compradores.html">Alta de compradores</a>
+                        <a href="../relacion/relacion.html">Relacion Proveedor/Banco</a>
+                        <a href="#">Contacto</a>
+                      </div>
+      <div class="main-content" style="background-color: white;">
+<h1 style="margin-left:28%; position:relative; top:28px;">Alta de Compradores</h1>
+<p id="user"></p>
+
+<br>
+
+<div class="row">
+ <form style="margin-bottom: 50px;">
+      <div class="column" style="width:100px;">
+       ID: <p id="IDnum" style="display: inline;">6</p>
+       </div>     
+       <div class="column">
+             <input placeholder="Nombre" id="name"><br>
+       </div>
+       <div class="column">
+             <input placeholder="RFC" id="age"><br>
+       </div>     
+            <br>
+                  </form>
+                  <button style=" cursor:pointer; position: relative; left:45%; margin-right: 3%; padding: 10px; color: white; background-color: #1D76BD; border:none; border-radius: 7px;"class="addBtn" onclick="add()">Agregar Comprador</button>
+                  <button style=" cursor:pointer; position: relative; left:5%; padding:10px; color: white; background-color: #1D76BD; border:none; border-radius: 7px;"id="save" onclick="save()">Guardar</button>
+                  <p id="error"></p>
+</div>
+<div class="w3-container" style="position: relative; bottom: 50px; left: 18%; width: 502px;">
+
+      <table id="myTable"><th></th><th></th><th>ID</th><th>Nombre</th><th>RFC</th><tr><td id="delete-td"><button style="" onclick="deletebtn(0)" class="btn"><i class="fa fa-trash"></i></button></td><td id="delete-td"><button onclick="editbtn(0)" class="editbtn">Editar</button></td><td class="idnums">1</td><td>Ford</td><td>a8a7sdh</td></tr><tr><td id="delete-td"><button style="padding:10px; color: white; cursor:pointer; border:none; border-radius:10px; background-color:#1D76BD;" onclick="deletebtn(1)" class="btn"><i class="fa fa-trash"></i></button></td><td id="delete-td"><button onclick="editbtn(1)" class="editbtn">Edit</button></td><td class="idnums">2</td><td>General Motors</td><td>GM387489</td></tr><tr><td id="delete-td"><button style="padding:10px; color: white; cursor:pointer; border:none; border-radius:10px; background-color:#1D76BD;" onclick="deletebtn(2)" class="btn"><i class="fa fa-trash"></i></button></td><td id="delete-td"><button onclick="editbtn(2)" class="editbtn">Edit</button></td><td class="idnums">3</td><td>Toyota</td><td>TY092379</td></tr><tr><td id="delete-td"><button style="padding:10px; color: white; cursor:pointer; border:none; border-radius:10px; background-color:#1D76BD;" onclick="deletebtn(3)" class="btn"><i class="fa fa-trash"></i></button></td><td id="delete-td"><button onclick="editbtn(3)" class="editbtn">Edit</button></td><td class="idnums">4</td><td>Hyundai</td><td>HN128731</td></tr><tr><td id="delete-td"><button style="padding:10px; color: white; cursor:pointer; border:none; border-radius:10px; background-color:#1D76BD;" onclick="deletebtn(4)" class="btn"><i class="fa fa-trash"></i></button></td><td id="delete-td"><button onclick="editbtn(4)" class="editbtn">Edit</button></td><td class="idnums">5</td><td>Suzuki</td><td>SZ892136</td></tr></table>
+</div>
+           
+
+<script src="./js/buyer-js.js"></script> 
+      </div>
+      <div class="linkapi" style="position:relative;">
+            <a style="margin-top:70%;"href="http://localhost:3000/prueba">Link api</a>
+                        </div>
+</body>
+</html>

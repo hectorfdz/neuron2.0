@@ -1,0 +1,210 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+
+.w3-container{
+margin-top:10%;
+margin-bottom:10%;
+}
+input{
+  margin-bottom: 8%;
+  border-radius: 0px;
+  border: none;
+  border-bottom: lightgray solid 1px;
+  padding-left: 10px;
+  position: relative;
+  left: 30%;
+  top:50px;
+}
+button{
+  background-color: #1d76bd;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+select{
+  border: none;
+  border-bottom: lightgray solid 1px;
+  margin-bottom:10px;
+
+}
+.sidenav {
+  font-size: 40px;
+  position: fixed;
+  width: 280px;
+  height: 100%;
+  z-index: 1; 
+  top: 0;
+  left: 0; 
+  background-color: #1E2027;
+  overflow-x: hidden;
+  padding-top: 20px;
+  box-shadow: 20px 15px 30px darkgray;
+}
+        .sidenav a {
+          font-family: Arial, Helvetica, sans-serif;
+          margin-bottom: 20px;
+          position: relative;
+          top:15%;
+          padding: 3px 30px;
+          text-decoration: none;
+          font-size: 25px;
+          color: white;
+          display: block;
+          line-height:37px;
+        }
+        
+        .sidenav a:hover {
+          color: #627AAD;
+          background-color:white;
+        }
+td {
+  border: 1px solid black;
+}
+tr{
+  height: 30px;
+}
+.deletebtn{
+  margin-right:10px;
+}
+.editbtn{
+  margin-right:10px;
+}
+td{
+  width: 150px;
+  padding-left: 3px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+#delete-td{
+  width: 30px;
+  border: none;
+}
+#addbank{
+  background-color: #8e1111;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  font-size: 14px;
+  margin: 4px 10px;
+  cursor: pointer;
+  position: relative;
+  left: 410px;
+  bottom: 110px;
+}
+.sidenav .main-buttons {
+  list-style-type: none;
+  margin: 64px 0;
+  padding: 0;
+  color: #fff;
+}
+.sidenav .main-buttons li {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.sidenav .main-buttons > li {
+  padding: 16px 52px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sidenav .main-buttons > li .fa {
+  position: absolute;
+  left: 12px;
+  color: #414655;
+}
+.sidenav .main-buttons > li:hover, .sidenav .main-buttons > li:active, .sidenav .main-buttons > li:focus {
+  background-color: #292c35;
+  cursor: pointer;
+}
+.sidenav .main-buttons > li:hover .hidden, .sidenav .main-buttons > li:active .hidden, .sidenav .main-buttons > li:focus .hidden {
+  width: 228px;
+}
+
+.hidden {
+  width: 0;
+  height: 100%;
+  padding: 64px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: #292c35;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.hidden li {
+  padding: 16px 24px;
+}
+.hidden li:hover, .hidden li:active, .hidden li:focus {
+  background-color: #323541;
+}
+.tipo{
+  width:205px;
+  height:36px; 
+  position:relative;
+  left:189px;
+  top: 25px;
+}
+#link-api{
+  margin-top:50%;
+}
+.main-content{
+  /* flex-grow: 2; */
+  border-radius: 4%;
+  position:relative;
+  top:10px;
+  box-shadow: 0px 10px 50px gray;
+  padding-bottom: 200px;
+}
+body {
+  /* background-color: #caccd6; */
+  line-height: 30px;
+  margin: 30 auto;
+  /* margin-left:30%; */
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html, body {
+  height: 100%;
+}
+
+.datos{
+
+font-family: helvetica;
+font-size: 18px;
+position: relative;
+top:31px;
+left: 14%;
+display: inline;
+
+}
+
+.nombre{
+position:relative;
+left: 16%;
+top:32px;
+
+}
+
+.claveunica{
+position:relative;
+left: 15%;
+top:30px;
+
+}

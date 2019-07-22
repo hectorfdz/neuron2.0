@@ -1,0 +1,198 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600);
+.w3-container{
+margin-top:10%;
+margin-bottom:10%;
+box-shadow: 0px 5px 13px darkgray;
+border:darkgray solid 1px;
+border-radius: 2%;
+padding: 10px 10px;
+height:auto;
+}
+input{
+  margin-bottom: 5px;
+  margin-left: 70px;
+  border:none;
+  border-bottom: solid lightgray 1px;
+}
+.sidenav {
+  font-size: 40px;
+  position: fixed;
+  width: 280px;
+  height: 100%;
+  z-index: 1; 
+  top: 0;
+  left: 0; 
+  background-color: #1E2027;
+  overflow-x: hidden;
+  padding-top: 20px;
+  box-shadow: 20px 15px 30px darkgray;
+}
+        .sidenav a {
+          font-family: Arial, Helvetica, sans-serif;
+          margin-bottom: 20px;
+          position: relative;
+          top:15%;
+          padding: 3px 30px;
+          text-decoration: none;
+          font-size: 25px;
+          color: white;
+          display: block;
+          line-height:37px;
+        }
+        
+        .sidenav a:hover {
+          color: #627AAD;
+          background-color:white;
+        }
+
+th{
+  background-color:white;
+
+}
+td {
+  background-color:#F7F7F7;
+  border: none;
+  /* box-shadow: inset 0.2em 0.2em lightgray; */
+}
+tr{
+  font-family: Century,sans-serif;
+  height: 30px;
+}
+.deletebtn{
+  background-color:white;
+  margin-right:10px;
+}
+.editbtn{
+  cursor: pointer;
+  margin-right:10px;
+  margin-right: 3%;
+  padding: 10px;
+  color: white;
+  background-color: #1D76BD;
+  border:none; border-radius: 7px;
+}
+.btn{
+  padding:10px; color: white; cursor:pointer; border:none; border-radius:10px; background-color:#1D76BD
+}
+
+td{
+  color: #002A54;
+  text-align: center;
+  width: 150px;
+  padding-left: 3px;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+#delete-td{
+  width: 30px;
+  border: none;
+  background-color:white;
+  padding:10px;
+}
+.sidenav .main-buttons {
+  list-style-type: none;
+  margin: 64px 0;
+  padding: 0;
+  color: #fff;
+}
+.sidenav .main-buttons li {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.sidenav .main-buttons > li {
+  padding: 16px 52px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sidenav .main-buttons > li .fa {
+  position: absolute;
+  left: 12px;
+  color: #414655;
+}
+.sidenav .main-buttons > li:hover, .sidenav .main-buttons > li:active, .sidenav .main-buttons > li:focus {
+  background-color: #292c35;
+  cursor: pointer;
+}
+.sidenav .main-buttons > li:hover .hidden, .sidenav .main-buttons > li:active .hidden, .sidenav .main-buttons > li:focus .hidden {
+  width: 228px;
+
+}
+
+.hidden {
+  width: 0;
+  height: 100%;
+  padding: 64px 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  list-style-type: none;
+  background-color: #292c35;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.hidden li {
+  padding: 16px 24px;
+}
+.hidden li:hover, .hidden li:active, .hidden li:focus {
+  background-color: #323541;
+}
+
+body {
+  /* background-color: #caccd6; */
+  line-height: 30px;
+}
+
+html, body {
+  height: 100%;
+  margin: 10px 20px;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 230px;
+  padding: 10px;
+  padding-left:0;
+  height: 70px; /* Should be removed. Only for demonstration */
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+.row{
+  margin-top: 30px;
+  padding-left:16px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.idnums{
+  width:70px;
+}
+
+.main-content{
+
+  border-radius: 4%;
+  width: 800px; 
+  height: auto;
+  box-shadow: 0px 20px 60px grey;
+}
+
+.main-body{
+  margin-left: 27%;
+  margin-top: 1%;
+  width: 800px; 
+  height: 750px;
+  
+}

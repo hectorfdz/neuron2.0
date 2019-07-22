@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html>
+<title> 
+  eFactor Dashboard
+</title> 
+<div class="logobackground" style="">
+    <div style="background-image: url('blanco.png')"><button class="profilebtn"></button></div>
+    
+    <img src="efactornetworklogo2.jpg" alt="efactornetworklogo" class="logoefn">
+  </div>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body style="background-color:#EEEEEE;">
+    <div class="pestañaclientes" style="position: relative; left: 30%;">
+        <link rel="stylesheet" type="text/css" href="styleclientes.css">
+      <head>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="register.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body{
+                max-width: 1250px;
+            }
+            td{
+                width:auto;
+                padding: 10px 10px;
+            }
+        </style>
+        </head>
+        <body style="background-color: #f9f9f9;">
+                <div class="primerbloque">
+            <h1 class="tclientes">Clientes</h1>
+        <p id="user"></p>
+        <form>
+            <input id="search" placeholder="RFC"><br>
+            <select class="tipo" id="sel" style="margin-top: 25px;">
+                <option value="Proveedor">Proveedor</option>
+                 <option value="Comprador">Comprador</option>
+                 <option value="Banco">Banco</option>
+            </select>
+        </form>
+            <button class="btn" onclick="findUser()" style="width:120px; margin-top:25px;">Search</button>
+        <p id="searchFound"></p>
+            </div>
+        <hr style="border-color:black">
+        
+        <div id="proveedores">
+            <h2>Proveedores</h2>
+            <table id="suppliers-table"><th></th><th></th><th>Names</th><th>RFC</th><th>Email</th><th>Tasa Base</th><th>Spread Points</th><tr><td id="delete-td"><button onclick="deletebtn(0)" class="btn"><i class="fa fa-trash"></i></button></td><td id="delete-td"><button onclick="editbtn(0)" class="editbtn">Editar</button></td><td class="idnums">IACNA</td><td>IAC023801</td><td>iacna@gmail.com</td><td>9.3</td><td>3</td></tr><tr><td id="delete-td"><button onclick="deletebtn(1)" class="btn"><i class="fa fa-trash"></i></button></td><td id="delete-td"><button onclick="editbtn(1)" class="editbtn">Editar</button></td><td class="idnums">Hector</td><td>8273392</td><td>hector@gmail.com</td><td>5</td><td>3</td></tr><tr><td id="delete-td"><button onclick="deletebtn(2)" class="btn"><i class="fa fa-trash"></i></button></td><td id="delete-td"><button onclick="editbtn(2)" class="editbtn">Editar</button></td><td class="idnums">efactor</td><td>90213902</td><td>efn@gmail.com</td><td>9.6</td><td>5</td></tr><tr><td id="delete-td"><button onclick="deletebtn(3)" class="btn"><i class="fa fa-trash"></i></button></td><td id="delete-td"><button onclick="editbtn(3)" class="editbtn">Editar</button></td><td class="idnums">Suzuki</td><td>SZ892136</td><td>suzuki@gmail.com</td><td>0.9</td><td>3.5</td></tr><tr><td id="delete-td"><button onclick="deletebtn(4)" class="btn"><i class="fa fa-trash"></i></button></td><td id="delete-td"><button onclick="editbtn(4)" class="editbtn">Editar</button></td><td class="idnums">GRUAS AGM SA DE CV</td><td>GAG110209F2A</td><td>gruas_agm@hotmail.com</td><td>0.7</td><td>3.5</td></tr></table>
+        </div>
+            
+        
+        <hr style="border-color:black">
+        
+        <div id="compradores">
+            <h2>Compradores</h2>
+            <table id="buyers-table"><th></th><th></th><th>ID</th><th>Names</th><th>RFC</th><tr><td id="delete-td"><button onclick="deletebtn(0)" class="btn"><i class="fa fa-trash"></i></button></td><td id="delete-td"><button onclick="editbtn(0)" class="editbtn">Editar</button></td><td class="idnums">1</td><td>Ford</td><td>a8a7sdh</td></tr><tr><td id="delete-td"><button onclick="deletebtn(1)" class="btn"><i class="fa fa-trash"></i></button></td><td id="delete-td"><button onclick="editbtn(1)" class="editbtn">Editar</button></td><td class="idnums">2</td><td>General Motors</td><td>XEXX010101000</td></tr><tr><td id="delete-td"><button onclick="deletebtn(2)" class="btn"><i class="fa fa-trash"></i></button></td><td id="delete-td"><button onclick="editbtn(2)" class="editbtn">Editar</button></td><td class="idnums">3</td><td>Toyota</td><td>TY092379</td></tr><tr><td id="delete-td"><button onclick="deletebtn(3)" class="btn"><i class="fa fa-trash"></i></button></td><td id="delete-td"><button onclick="editbtn(3)" class="editbtn">Editar</button></td><td class="idnums">4</td><td>Hyundai</td><td>HN128731</td></tr><tr><td id="delete-td"><button onclick="deletebtn(4)" class="btn"><i class="fa fa-trash"></i></button></td><td id="delete-td"><button onclick="editbtn(4)" class="editbtn">Editar</button></td><td class="idnums">5</td><td>Suzuki</td><td>SZ892136</td></tr></table>
+        </div>
+        
+        
+        <script src="./js/clientes-admin.js"></script> 
+        </body>
+    </div>
+    
+  <img src="profileimg.png" alt="perfil" class="fotoperfil">
+      
+    <div class="sidenav">
+        <a href="index.html">Registro de documentos</a>
+        <a href="altacompradores/alta-compradores.html">Alta de compradores</a>
+        <a href="relacion/relacion.html">Relacion Proveedor/Banco</a>
+        <a href="#">Contacto</a>
+      </div>
+      
+      
+</body>
+</html>
+

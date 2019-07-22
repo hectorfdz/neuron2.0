@@ -1,0 +1,84 @@
+
+        body {
+          font-family: Arial, Helvetica, sans-serif
+        }
+        
+        .sidenav {
+          font-size:40px;
+          height: 100%;
+          width: 280px;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          background-color: #002A54;
+          overflow-x: hidden;
+          padding-top: 20px;
+          box-shadow: 20px 15px 30px darkgray;
+        }
+        
+        .sidenav a {
+          font-family: Arial, Helvetica, sans-serif;
+          margin-bottom: 20px;
+          position: relative;
+          top:15%;
+          padding: 3px 30px;
+          text-decoration: none;
+          font-size: 25px;
+          color: white;
+          display: block;
+        }
+        
+        .sidenav a:hover {
+          color: #627AAD;
+          background-color:white;
+        }
+        
+        .main {
+          margin-left: 200px; /* Same as the width of the sidenav */
+        }
+        
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+        }
+        
+        .logoefn{
+          height: 90px;
+          position: relative;
+          left: 24%;
+          z-index: 1; 
+        }
+
+        .logobackground{
+          position: relative;
+          bottom: 8px;
+          background-color: #002A54;
+          height: 80px;
+          width: 1920px;
+          z-index: 2;
+        }
+
+        .profilebtn{
+
+          padding: 30px;
+          border-radius: 50px;
+          float:right;
+          margin-top: 8px;
+          margin-right: 20px;
+          color: black;
+          border: #002A54 solid 3px;
+          cursor: pointer;
+         background: white;
+
+        }
+
+        .fotoperfil{
+          position: relative;
+          height:40px;
+          width: 40px;
+          left:147.7%;
+          bottom: 1476px;
+          z-index: 10;
+          cursor: pointer;
+        }
